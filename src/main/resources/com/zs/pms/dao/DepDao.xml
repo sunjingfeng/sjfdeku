@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--指向dao接口，做Dao实现-->
+<mapper namespace="com.zs.pms.dao.DepDao">
+
+	<select id="queryByPid" parameterType="int" resultType="TDep"> 
+		select * from tdep where pid=#{pid}
+	</select>
+
+
+</mapper>
